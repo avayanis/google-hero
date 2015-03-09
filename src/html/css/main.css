@@ -1,0 +1,29 @@
+html, body {
+	height: 100%;
+}
+
+#google-app-container {
+	position: fixed;
+	top: 51px;
+}
+
+.google-app {
+	position: fixed;
+	top: 51px;
+	bottom: 0px;
+	width: 100%;
+	z-index: 0;
+}
+
+.google-app.active {
+	z-index: 100;
+}
+
+.google-app-navigation-link {
+	text-transform: capitalize;
+}
+
+.react-container {
+	height: 100%;
+	width: 100%;
+}

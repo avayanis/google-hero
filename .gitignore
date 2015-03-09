@@ -1,0 +1,17 @@
+# OS X
+.DS_Store
+
+# NodeJS
+node_modules
+
+# Atom-Shell
+bin
+
+# Build
+build
+dist
+tmp
+
+# React
+src/html/js/react
+.module-cache

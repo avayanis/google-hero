@@ -1,0 +1,5 @@
+{
+  "name"    : "Google Hero",
+  "version" : "0.0.1",
+  "main"    : "core/index.js"
+}
