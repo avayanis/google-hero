@@ -20,7 +20,12 @@ app.on('window-all-closed', function() {
 app.on('ready', function() {
   // var appIcon = new Tray(__dirname + '/images/icon_tray.png');
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1280, height: 768, frame: false});
+  mainWindow = new BrowserWindow({
+    width: 1280,
+    height: 768,
+    frame: false,
+    transparent: true
+  });
 
   // and load the index.html of the app.
   mainWindow.loadUrl('file://' + __dirname + '/../html/index.html');
