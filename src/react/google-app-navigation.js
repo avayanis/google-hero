@@ -42,17 +42,21 @@ var GoogleAppNavigation = React.createClass({
       WebkitAppRegion: 'drag'
     }
 
+    var navElementStyle = {
+      WebkitAppRegion: 'no-drag'
+    }
+
     return(
       <nav className='navbar navbar-inverse navbar-fixed-top' role='navigation' style={navStyle}>
         <div className='container-fluid'>
-          <div className='navbar-header'>
+          <div className='navbar-header' style={navElementStyle}>
             <a className='navbar-brand' target='_blank' href='https://github.com/avayanis/google-hero'>Google Hero</a>
           </div>
           <div className='navbar-collapse collapse'>
-            <ul className='nav navbar-nav'>
+            <ul className='nav navbar-nav' style={navElementStyle}>
               {navItems}
             </ul>
-            <ul className='nav navbar-nav navbar-right'>
+            <ul className='nav navbar-nav navbar-right' style={navElementStyle}>
               <li><a href='#logout' title='Log Out'><span className='glyphicon glyphicon-log-out' onClick={this.logout}></span></a></li>
               <li><a href='#refresh' title='Refresh'><span className='glyphicon glyphicon-refresh' onClick={this.refreshApps}></span></a></li>
             </ul>
