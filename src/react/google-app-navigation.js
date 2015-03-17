@@ -38,8 +38,12 @@ var GoogleAppNavigation = React.createClass({
       );
     }.bind(this));
 
+    var navStyle = {
+      WebkitAppRegion: 'drag'
+    }
+
     return(
-      <nav className='navbar navbar-inverse navbar-fixed-top' role='navigation'>
+      <nav className='navbar navbar-inverse navbar-fixed-top' role='navigation' style={navStyle}>
         <div className='container-fluid'>
           <div className='navbar-header'>
             <a className='navbar-brand' target='_blank' href='https://github.com/avayanis/google-hero'>Google Hero</a>
